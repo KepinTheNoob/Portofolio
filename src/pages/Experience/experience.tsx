@@ -1,4 +1,4 @@
-import styles from './Experience.module.css';
+import styles from './experience.module.css';
 
 const experienceData = [
   {

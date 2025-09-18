@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Projects.module.css";
+import styles from "./projects.module.css";
 
 const projectsData = [
   {
