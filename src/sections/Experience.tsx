@@ -4,7 +4,7 @@ import styles from './Experience.module.css';
 
 export function Experience() {
   return (
-    <Section id="experience" title="Experience" pathLabel="~/experience">
+    <Section id="experience" title="Experience">
       <div className={styles.list}>
         {experience.map((entry, index) => (
           <div key={index} className={styles.entry}>

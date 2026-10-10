@@ -6,7 +6,7 @@ import styles from './Projects.module.css';
 
 export function Projects() {
   return (
-    <Section id="projects" title="Selected Work" pathLabel="~/projects">
+    <Section id="projects" title="Selected Work">
       <div className={styles.grid}>
         {projects.map((project) => (
           <Card key={project.title}>

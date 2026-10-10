@@ -5,7 +5,7 @@ import styles from './TechStack.module.css';
 
 export function TechStack() {
   return (
-    <Section id="stack" title="Tech Stack" pathLabel="~/stack">
+    <Section id="stack" title="Tech Stack">
       <div className={styles.groups}>
         {techStack.map((group) => (
           <div key={group.label} className={styles.group}>

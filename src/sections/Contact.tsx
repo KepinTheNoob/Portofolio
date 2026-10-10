@@ -6,7 +6,7 @@ export function Contact() {
   const { contact } = personal;
 
   return (
-    <Section id="contact" title="Contact" pathLabel="~/contact">
+    <Section id="contact" title="Contact">
       <div className={styles.links}>
         <div className={styles.item}>
           <span className={styles.label}>email</span>
