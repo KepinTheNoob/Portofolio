@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+}
+
+.links {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.descriptionList {
+  font-size: 0.875rem;
+  margin: 0;
+  margin-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-md);
+  flex-grow: 1;
+}
+
+.descriptionList li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}

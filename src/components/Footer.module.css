@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  text-align: left;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.text {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}

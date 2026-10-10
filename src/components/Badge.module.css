@@ -1,0 +1,10 @@
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--colors-border);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  white-space: nowrap;
+}
