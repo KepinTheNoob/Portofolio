@@ -1,0 +1,8 @@
+.card {
+  background-color: rgba(11, 13, 26, 0.85); /* colors.surface at 85% */
+  border: 1px solid var(--colors-border);
+  border-radius: var(--rounded-md);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+}

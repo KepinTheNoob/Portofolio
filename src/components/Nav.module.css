@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: background-color var(--transition-scroll), border-bottom-color var(--transition-scroll);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.header.scrolled {
+  background-color: rgba(5, 6, 15, 0.8); /* colors.background at 80% */
+  backdrop-filter: blur(8px); /* Optional: just a slight blur to help text readability over stars */
+  border-bottom-color: var(--colors-border);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav a {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav a:hover {
+  color: var(--colors-primary);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.contactBtn {
+  font-size: 0.875rem;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--colors-border);
+  border-radius: var(--rounded-full);
+  color: var(--colors-primary);
+  background-color: transparent;
+}
+
+.contactBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--colors-accent);
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--colors-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--colors-background);
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--colors-border);
+  }
+
+  .nav.mobileOpen {
+    display: flex;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+}

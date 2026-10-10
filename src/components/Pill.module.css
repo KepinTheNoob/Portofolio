@@ -1,0 +1,33 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--rounded-full);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.email {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--colors-primary);
+}
+
+.copyBtn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--rounded-full);
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--colors-primary);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.copyBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

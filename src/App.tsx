@@ -1,22 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Home from './pages/Home/home';
-import Projects from './pages/Projects/projects';
-import Experience from './pages/Experience/experience';
-import './App.css';
+import { Sky } from "./components/Sky";
+import { Nav } from "./components/Nav";
+import { Footer } from "./components/Footer";
+import { Hero } from "./sections/Hero";
+import { Projects } from "./sections/Projects";
+import { Experience } from "./sections/Experience";
+import { TechStack } from "./sections/TechStack";
+import { Contact } from "./sections/Contact";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
+    <>
+      <Sky />
+      <Nav />
+      <main className="page">
+        <Hero />
+        <Projects />
+        <Experience />
+        <TechStack />
+        <Contact />
       </main>
-    </Router>
+      <Footer />
+    </>
   );
 }
 

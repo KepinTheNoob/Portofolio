@@ -1,0 +1,12 @@
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--transition-base);
+}
+
+.link:hover {
+  color: var(--color-accent-hover);
+}
