@@ -7,7 +7,6 @@ export const personal = {
   ],
   contact: {
     email: "kevinsetiawan2412@gmail.com",
-    phone: "+62 898 7801 833",
     linkedin: {
       url: "http://www.linkedin.com/in/kevin--setiawan",
       label: "linkedin.com/in/kevin--setiawan",
